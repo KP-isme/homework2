@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Week 2 | Javascript!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+<!-- you need to add the id into div for divContainer to work in the java script (<script>) -->
+        <div id = "jsExample">
+
+<!-- divContainer.innerHTML = "" anything in the "" will go into here -->
+       
+        </div>
+
+        <script>
+
+            var divContainer = document.getElementById("jsExample")
+
+            divContainer.innerHTML = "<h1>Hello!</h1>" //this line of code makes code within the <div>
+
+                //Adding ONTO the inner html taking whats there and adding it (+=)
+                divContainer.innerHTML += "<h2>Adding</2>"
+var hello = 2
+//this part will alert user and do a pop up VVV
+    
+    function addNumbers(numberOne,numberTwo)
+
+    {
+        console.log(numberOne + numberTwo)
+    }
+    //Function wih a parameter
+    function alertMessage(messageToAlert)  //this is the name
+{
+    //calling another function inside another funtion
+    addNumbers(10,26)
+    alert(messageToAlert) //command to alert
+
+}
+
+    function alertMessageTwo(paramOne,paramTwo)
+
+    {
+        alert(paramOne + paramTwo)
+    }
+
+
+
+
+    alertMessage("hello")
+    alertMessageTwo("hello", "hello two")
+
+//end of alert user
+
+
+//start of varables
+
+//comment in JS
+
+            var test = 10;
+
+
+            //if statement
+            var a = 10
+            var b = 10
+            //"if a = b then the console will say A = B"
+            if(a == b)
+            
+            {
+                console.log("A = B") //anything else will say everything outside the {}
+            }else console.log("a does not equal b")
+
+
+            if(a > 10)
+{
+    console.log("A is greaer than 10")
+}
+//if I want to compare a string
+var compareString = "text"
+            if(compareString == "text") //<--- change this and it will effect {}
+            {
+                console.log("a joke")
+            } else {
+                console.log("not a joke")
+            }
+
+            var a = 10;
+            var b = 25;
+
+            console.log(a+b) //this does math
+            console.log(a-b) 
+            console.log(a*b)
+            console.log(a/b)
+
+            console.log("test" + "test2") //can't subtrac
+//end of varables
+        </script>
+    </body>
+</html>

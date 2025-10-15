@@ -1,0 +1,148 @@
+body{
+    background-color: black;
+    padding:30px;
+}
+
+
+/* this id is for the first div */
+#bg{
+    background-color:rgb(3, 88, 99);
+    /*setting the width*/
+
+    border:3px solid white;
+
+    text-align:center;
+
+    /*padding:20px;*/
+    padding:100px;
+    
+}
+
+
+#wrapper{
+    margin:auto;
+
+    /*width:500px;*/ /* <--this locks the width*/
+    padding:10px; 
+    border:2px solid white;
+    
+}
+
+
+#header{
+    /*creating a border*/
+    border: 4px solid salmon;
+
+    min-height:100px;
+
+    /* padding:25px; */
+}
+/* this id is for <h1> */
+#hello{
+    font-size:55px;
+    color: maroon;
+    text-align:center;
+    text-shadow: 2px 2px 2px black;
+    line-height: 200px;
+
+}
+
+#nav-bar
+{
+    /*width: 835px;*/
+    height: 50px;
+    margin: auto;
+    padding:25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid brown;
+
+}
+
+.buttonDesign{
+    width:200px;
+    border:2px solid green;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right:10px;
+    margin-left:10px;
+    box-shadow: 7px 5px 10px black;
+
+
+}
+
+#mainContent{
+    min-height:900px;
+    min-width: 500px;
+    border:10px solid;
+    text-shadow: 1px 1px 15px rgb(255, 255, 255);
+    
+
+}
+
+#bob{
+    width:300px;
+    margin-top:5px;
+
+}
+
+#para{
+    border: 3px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+
+}
+
+/*animation*/
+#bob{
+
+    animation-name: textAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+
+
+@keyframes percentageTextAnimation{
+    0%{color: black;
+    transform: translateX(0px)}
+    25%{color: yellowgreen;
+        transform: translateX(50px)}
+    50%{color: bisque;
+        transform: translateX(100px)}
+    75%{color: goldenrod;
+        transform: translateX(150px)}
+    100%{color: teal;
+        transform: translateX(20px)}
+}
+
+
+/* from = beginning  to = to the end */
+@keyframes textAnimation{
+    from{
+        color: black
+    }
+    to{
+        color: palevioletred:
+    }
+
+}
+
+#____:hover{
+    width:70%
+}
+
+
+/*
+
+padding - type of style changes the distance between outside border
+margin - changes the distance width/height between borders I think 
+text-shadow - is cool, this first two px are how far away it is the last one makes it foggy ("1px 1px 10px" this would make a slight side diffence while giving and blur)
+*/

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Week 2 Lab</title>
+
+</head>
+<body>
+    <!-- BUTTTONS!!!! -->
+    <h1>Button Clicker</h1>
+    <h2 id="output">0</h2>
+    <input type="button" id="btn" value="click me!">
+    <input type="button" id="reset-btn" value = "Reset Clicks">
+    <input type="button" id="upgrade-btn" value = "Upgrade Clicks">
+
+    <input type="button" id="multiply-btn" value = "multiply Clicks">
+<!-- Text field -->
+ <input type="text" name = "upgrade" id="upgrade">
+
+<script>
+    var clickButton = document.getElementById("btn")
+    var resetButton = document.getElementById("reset-btn")
+    var upgradeButton = document.getElementById("upgrade-btn")  
+    var output = document.getElementById("output")
+
+    var upgradeButton = document.getElementById("multiply-btn")  
+    var output = document.getElementById("output")
+    
+
+    var clicks = 0
+    var clickByAmount = 1
+    var multiplyByAmount = 2
+
+function increment()
+{
+    clicks *= multiplyByAmount;
+
+
+}
+
+
+    function increment()
+{
+    //add clicks
+    clicks += clickByAmount;
+
+    //change the innerHTML to the current amount of clicks
+    output.innerHTML = clicks;
+
+
+}
+
+    clickButton.addEventListener("click",increment)
+function reset()
+{
+    clicks = 0
+    output.innerHTML = 0 
+
+}
+
+
+resetButton.addEventListener("click",reset)
+
+
+
+
+
+function upgradeclick()
+{
+    var upgradeBox = document.getElementById("upgrade")
+    clickByAmount = Number(upgradeBox.value)
+
+}
+upgradeButton.addEventListener('click',upgradeclick)
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
